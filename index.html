@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indoree Food Online Restaurant</title>
+    <!---=====fontawesome icon=====--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---=====bootstrap css=====--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!---=====tailblock tailwind css=====--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    <!---=====animation on scroll=====--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---=====custom css=====--->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!---=====navbar=====---> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand" href="#">
+          <img src="images/TOPLOGO.png" class="logo-img" alt="TOPLOGO">
+        </a>
+        <!---=====location fetch=====--->
+        <form class="d-flex" role="search">
+          <input class="form-control search me-2" type="search" placeholder="" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <!---=====location fetch end=====--->
+        <button class="menu-btn"type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="menu-icon">&#9776;</span>
+        </button>
+       
+        <div class="collapse navbar-collapse nav-div" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Market Place</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Sign in</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link me-2" href="#">Sing up</a>
+            </li>
+          </ul>
+          <button class="btn me-4">Dark</button>
+          <!---=====google translate btn=====--->
+          <div class="me-4" id="google_translate_element"></div>
+          <!---=====google translate btn end=====--->
+        </div>
+      </div>
+    </nav>
+    <!---=====navbar end=====--->
+
+    <!---=====hero section=====--->
+    <section class="container-fluid hero-section">
+      <div class="row">
+        <div class="col-12 p-2 food-content">
+          <div class="food-text m-5">
+            <h1 class="h1">We Are In The Business Of Food Our Restaurants Do</h1>
+            <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
+          </div>
+         <div class="food-form m-5" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+          <form class="p-2">
+            <input type="text" class="col w-50 p-2 m-2" placeholder="Restaurants name">
+            <input type="text" class="col w-50 p-2 m-2" placeholder="location"> 
+            <input type="text" class="col w-50 p-2 m-2" placeholder="distance"><br/>
+            <button class="col-3 btn p-2">Search</button>       
+          </form>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!---=====hero section end=====--->
+
+    <!---=====main section=====--->
+
+    <section class="container-fluid main-section">
+      <div class="row main-row">
+        <div class="col-12 main-div">
+
+          <div class="top-restaurant" >
+            <h1 class="h1">Most <span> Restaurants</span></h1>
+            <p class="h4">Explore restaurants, bars and cafes by locality.</p>
+          </div>
+         
+          <div class="col-12 main-slider" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="col-12 slider ">
+              <div class="image-div">
+                <img src="food/Deserts.png" alt="Deserts">
+                <p>Deserts</p>
+              </div>
+              <div class="image-div">
+                <img src="food/Dosa1.png" alt="Dosa1">
+                <p>Dosa</p>
+              </div>
+              <div class="image-div">
+                <img src="food/Momos1.png" alt="Momos1">
+                <p>Momos</p>
+              </div>
+              <div class="image-div">
+                <img src="food/Pizza1.png" alt="Pizza1">
+                <p>Pizza</p>
+              </div>
+              <div class="image-div">
+                <img src="food/Roll.png" alt="Roll">
+                <p>Roll</p>
+              </div>
+              <div class="image-div">
+                <img src="food/Biryani.png" alt="Biryani">
+                <p>Biryani</p>
+              </div>
+            </div>          
+            </div>
+         
+          </div>
+        </div>
+    </section>
+   <!---=====main section end=====--->
+   
+   <!---=====main-ll section=====--->
+
+   <section class="container-fluid main-ll">
+      <div class="row box-row">
+
+        <div class="col-12 heading-div">
+          <h1 class="h1">Explore <span>Our Menu</span></h1>
+          <p class="h4">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+        </div>
+        
+        <div class="col-12 col-sm-3 col-md-3 card-div border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+          <p class="card-icon">
+            <i class="fa-solid fa-basket-shopping"></i> 
+            <i class="fa-solid fa-heart"></i>         
+          </p>       
+          <img src="food/Pizza2.png" alt="Pizza2" class="w-50 food-image">        
+          <p class="restaurant-name">Golden Fork Restaurant</p>
+          <address>Indore, Madhya Pradesh, 452001</address> 
+        </div>
+
+        <div class="col-12 col-sm-3 col-md-3 card-div border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p class="card-icon">
+            <i class="fa-solid fa-basket-shopping"></i> 
+            <i class="fa-solid fa-heart"></i>         
+          </p>       
+          <img src="food/Noodles.png" alt="big-images" class="w-50 food-image">        
+          <p class="restaurant-name">The Urban Plate Restaurant</p>
+          <address>Indore, Madhya Pradesh, 452001</address> 
+        </div>
+
+        <div class="col-12 col-sm-3 col-md-3 card-div border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <p class="card-icon">
+            <i class="fa-solid fa-basket-shopping"></i> 
+            <i class="fa-solid fa-heart"></i>         
+          </p>       
+          <img src="food/Momos2.png" alt="Momos2" class="w-50 food-image">        
+          <p class="restaurant-name">Charming Chops Restaurant</p>
+          <address>Indore, Madhya Pradesh, 452007</address> 
+        </div>
+        
+      </div>
+
+      <!--second row-->
+      <div class="row box-row">
+
+        <div class="col-12 col-sm-3 col-md-3 card-div border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+          <p class="card-icon">
+            <i class="fa-solid fa-basket-shopping"></i> 
+            <i class="fa-solid fa-heart"></i>         
+          </p>       
+          <img src="food/Tali.png" alt="big-images" class="w-50 food-image">        
+          <p class="restaurant-name">Norman Allison Restaurant</p>
+          <address>Indore, Madhya Pradesh, 452002</address> 
+        </div>
+
+        <div class="col-12 col-sm-3 col-md-3 card-div border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p class="card-icon">
+            <i class="fa-solid fa-basket-shopping"></i> 
+            <i class="fa-solid fa-heart"></i>         
+          </p>       
+          <img src="food/Dosa2.png" alt="Dosa2" class="w-50 food-image">        
+          <p class="restaurant-name">Flavor Haven Restaurant</p>
+          <address>Indore, Madhya Pradesh, 453555</address> 
+        </div>
+
+        <div class="col-12 col-sm-3 col-md-3 card-div border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <p class="card-icon">
+            <i class="fa-solid fa-basket-shopping"></i> 
+            <i class="fa-solid fa-heart"></i>         
+          </p>       
+          <img src="food/Pasta.png" alt="big-images" class="w-50 food-image">        
+          <p class="restaurant-name">Nolan Mcmillan Restaurant</p>
+          <address>Indore, Madhya Pradesh, 452001</address> 
+        </div>
+        
+      </div>
+
+   </section>
+<!---=====main-ll section end=====--->
+
+<!---=====team section=====--->
+<section class="container-fluid team-section">
+  <div class="row team-row">
+
+    <div class="col-12 team-heading">
+      <h1 class="h1">Our <span> Dedicated</span> Team</h1>
+      <p class="h4">Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    </div> 
+
+    <div class="col-12 col-sm-3 col-md-3 team-card" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+      <div class="container team-div">
+        <img src="images/person.png" alt="person" class="img-thumbnail w-50">
+        <h3 class="h3">Zinnat Zara</h3>
+        <p class="food-prepare">Food Preparer</p>
+        <p class="icon">
+          <span class="badge  text-bg-success">Follow Me</span>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>                                 
+        </p>
+        <hr/>
+      </div>
+    </div>
+        
+    <div class="col-12 col-sm-3 col-md-3 team-card" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+      <div class="container team-div">
+        <img src="images/person.png" alt="person" class="img-thumbnail w-50">
+        <h3 class="h3">Zinnat Zara</h3>
+        <p class="food-prepare">Food Preparer</p>
+        <p class="icon">
+          <span class="badge  text-bg-success">Follow Me</span>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>                                 
+        </p>
+        <hr/>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-3 col-md-3 team-card" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+      <div class="container team-div">
+        <img src="images/person.png" alt="person" class="img-thumbnail w-50">
+        <h3 class="h3">Zinnat Zara</h3>
+        <p class="food-prepare">Food Preparer</p>
+        <p class="icon">
+          <span class="badge  text-bg-success">Follow Me</span>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="team-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>                                 
+        </p>
+        <hr/>
+      </div>
+    </div>
+
+        <div class="col-12 col-sm-3 col-md-3 team-card" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+          <div class="container team-div">
+            <img src="images/person.png" alt="person" class="img-thumbnail w-50">
+            <h3 class="h3">Zinnat Zara</h3>
+            <p class="food-prepare">Food Preparer</p>
+            <p class="icon">
+              <span class="badge  text-bg-success">Follow Me</span>
+              <a href="#" class="team-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="team-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="team-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>                                 
+            </p>
+            <hr/>
+          </div>
+        </div>
+
+  </div>
+</section>
+<!---=====team section end=====--->
+
+<!---=====logo slider=====--->
+<section class="container-fluid logo-section">
+  <div class="row logo-row">
+
+    <marquee behavior="" direction="left" class="logo-marquee">
+    <div class="col-12 logo-slider">
+
+    <div class="col-2 logo-div">
+      <img src="images/INDOREE.png" alt="INDOREE">
+    </div>
+    <div class="col-2 logo-div">
+      <img src="images/INDOREE1.png" alt="INDOREE1">
+    </div>
+    <div class="col-2 logo-div">
+      <img src="images/INDOREE2.png" alt="INDOREE2">
+    </div>
+    <div class="col-2 logo-div">
+      <img src="images/INDOREE3.png" alt="INDOREE3">
+    </div>
+    <div class="col-2 logo-div">
+      <img src="images/INDOREE4.png" alt="INDOREE4">
+    </div>
+    <div class="col-2 logo-div">
+      <img src="images/INDOREE5.png" alt="INDOREE5">
+    </div>
+
+      </div>
+    </marquee>
+
+  </div>
+</section>
+<!---=====logo slider end=====--->
+
+<!---=====footer=====--->
+<footer class="container-fluid">
+  <div class="row footer-row">
+
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 contact-us">
+      <h3 class="h2">Contact Us</h3>
+      <div class="footer-div p-1">
+        <p>
+          <i class="fa-solid fa-location-pin"></i>
+          <span>Mandi Santer No 03</span><br/>
+          <span>Sabalgarh Distt. Morena (M.P.) 476229</span>
+        </p>
+        <p>
+          <i class="fa-regular fa-envelope"></i>
+          <span>indoreefood@gmail.com</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <span>+911112223330</span>
+        </p>
+      </div>
+    
+    </div>
+
+
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 my-account" >
+      <h3 class="h2">My Account</h3>
+      <div class="footer-div">
+      <p>My Account</p>
+      <p>Returns Policy</p>
+      <p>Shopping Cart</p>
+      <p>Services</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 categories" >
+      <h3 class="h2">Categories</h3>
+      <div class="footer-div">
+      <p>Bread & Bakery</p>
+      <p>Fresh Fruits</p>
+      <p>Nutt & Seeds</p>
+      <p>Beverages</p>
+      </div>
+    </div>
+
+  </div>
+
+ <!--second row-->
+  <div class="row second-footer">
+
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 copy">&copy 2024 FoodOnline Developed By: Shubham Jaga</div>
+
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 payment-div">
+      <img src="images/payment.png"  class="" alt="">
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-4 col-xl-4 media-link">
+      <a href="#" class="">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#" class="">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" class="">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="#" class="">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="#" class="">
+        <i class="fa-brands fa-pinterest"></i>
+      </a>
+      
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- -=====Header=====---
+   <header class="header-1">
+    <nav>
+       <div class="logo">
+        <a href="#">
+          <img src="images/logo3.png" class="logo-image" alt="">
+        </a>
+       </div>    
+
+      <div class="navbar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link"  href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Market Place</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+        
+      </div>
+      <div class="menu-icon">&#9776;</div> <---=====menu icon=====---
+      <span class="date-time"></span> 
+      <div class="col-4 col-sm-4 col-md-2 col-xl-2 col-xxl-2 search-div">
+        <input class="form-control" type="search" placeholder="" aria-label="Search">
+       </div>
+
+    </nav>
+   </header>
+   <---=====Header End=====--->
+
+   <!---=====animation on scroll=====--->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+
+  <!---=====google translate script & api=====--->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!---=====google translate script & api end=====--->
+
+  <!---=====script js=====--->
+  <script src="script.js"></script>
+
+  <!---=====bootstrap bundle js=====--->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
